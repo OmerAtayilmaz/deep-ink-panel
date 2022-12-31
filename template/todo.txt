@@ -1,0 +1,2 @@
+[ ] -> navbar altında logoların kayarak gelmesi
+[ ] -> 
