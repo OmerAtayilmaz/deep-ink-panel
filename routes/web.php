@@ -14,3 +14,7 @@ Route::controller(HomeController::class)->name('storefront.')->group(function(){
     Route::get('/contact', 'contact')->name('contact');
     Route::get('/faq', 'faq')->name('faq');
 });
+
+Route::get("*", function(){
+    return view('storefront.pages.404');
+})->name("404");
