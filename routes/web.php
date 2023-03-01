@@ -1,23 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-Route::get('/', function () {
-    return view('main');
-});
+use App\Http\Controllers\HomeController;
 
 
-Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
+Route::controller(HomeController::class)->name('storefront.')->group(function(){
+    Route::get('/', 'index')->name('index');
+    Route::get('/services', 'services')->name('services');
+    Route::get('/projects', 'projects')->name('projects');
+    Route::get('/references', 'references')->name('references');
+    Route::get('/blog', 'blog')->name('blog');
+    Route::get('/about', 'about')->name('about');
+    Route::get('/contact', 'contact')->name('contact');
+    Route::get('/faq', 'faq')->name('faq');
 });
