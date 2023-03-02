@@ -12,25 +12,25 @@
             <a href="{{route('storefront.index')}}" class="logo m-0 float-start">Atayilmaz Web Solutions<span class="text-primary">.</span> </a>
             <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-start">
                 <li  class="{{ Route::currentRouteName() == 'storefront.index' ? 'active':'' }}" >
-                    <a href="{{route('storefront.index')}}">Home</a>
+                    <a href="{{route('storefront.index')}}">{{__('navigation.navbar.home')}}</a>
                 </li>
                 <li  class="{{ Route::currentRouteName() == 'storefront.services' ? 'active':'' }}">
-                    <a href="{{route('storefront.services')}}">Services</a>
+                    <a href="{{route('storefront.services')}}">{{__('navigation.navbar.services')}}</a>
                 </li>
                 <li  class="{{ Route::currentRouteName() == 'storefront.projects' ? 'active':'' }}">
-                    <a href="{{route('storefront.projects')}}">Projects</a>
+                    <a href="{{route('storefront.projects')}}">{{__('navigation.navbar.projects')}}</a>
                 </li>
                 <li  class="{{ Route::currentRouteName() == 'storefront.references' ? 'active':'' }}">
-                    <a href="{{route('storefront.references')}}">References</a>
+                    <a href="{{route('storefront.references')}}">{{__('navigation.navbar.references')}}</a>
                 </li>
                 <li  class="{{ Route::currentRouteName() == 'storefront.blog' ? 'active':'' }}">
-                    <a href="{{route('storefront.blog')}}">Blog</a>
+                    <a href="{{route('storefront.blog')}}">{{__('navigation.navbar.blog')}}</a>
                 </li>
                 <li  class="{{ Route::currentRouteName() == 'storefront.about' ? 'active':'' }}">
-                    <a href="{{route('storefront.about')}}">About Us</a>
+                    <a href="{{route('storefront.about')}}">{{__('navigation.navbar.about')}}</a>
                 </li>
                 <li  class="{{ Route::currentRouteName() == 'storefront.contact' ? 'active':'' }}">
-                    <a href="{{route('storefront.contact')}}">Contact Us</a>
+                    <a href="{{route('storefront.contact')}}">{{__('navigation.navbar.contact')}}</a>
                 </li>
             </ul>
             <a href="#" class="burger ml-auto float-end site-menu-toggle light js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">

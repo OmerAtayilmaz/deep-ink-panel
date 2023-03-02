@@ -2,10 +2,12 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-6">
-                <h2 class="heading">Our Projects</h2>
+                <h2 class="heading">{{__('components.gallery.title')}}</h2>
             </div>
             <div class="col-lg-4">
-                <p>The projects we have done with care as Atayilmaz web solutions are listed below. We have been providing consultancy services to 8 different e-commerce projects since 2022.</p>
+                <p>
+                    {{__('components.gallery.description')}}
+                </p>
             </div>
         </div>
 
@@ -78,9 +80,9 @@
                 </div>
             </div>
 
-            <div class="col-md-12 text-center mt-5">
-                <p><a href="#" class="btn btn-primary me-4">See all projects</a></p>
-            </div>
+{{--            <div class="col-md-12 text-center mt-5">--}}
+{{--                <p><a href="#" class="btn btn-primary me-4">See all projects</a></p>--}}
+{{--            </div>--}}
 
         </div>
     </div>
