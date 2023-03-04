@@ -7,17 +7,16 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 mx-auto ">
-                    <h1 class="mb-5 text-center"><span>Our Projects</span></h1>
+                    <h1 class="mb-5 text-center"><span>{{__('pages.our-projects.hero.title')}}</span></h1>
                     <div class="intro-desc text-left">
                         <div class="line"></div>
-                        <p>Delectus voluptatum distinctio quos eius excepturi sunt pariatur, aut, doloribus officia ea molestias beatae laudantium, quam odio ipsum veritatis est maiores velit quasi blanditiis et natus accusamus itaque.</p>
+                        <p>{{__('pages.our-projects.hero.description')}}</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     @include('storefront.components.gallery')
-    @include('storefront.components.accordion-menu')
     @include('storefront.components.card-list')
 @endsection
 @section('footer')

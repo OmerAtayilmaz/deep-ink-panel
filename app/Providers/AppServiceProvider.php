@@ -19,7 +19,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $browserLang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'],0,2);
-        app()->setLocale($browserLang);
+
     }
 }

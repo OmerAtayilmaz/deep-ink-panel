@@ -7,14 +7,11 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 mx-auto ">
-                    <h1 class="mb-5 text-center"><span>Contact Us</span></h1>
+                    <h1 class="mb-5 text-center"><span>{{__('pages.contact.hero.title')}}</span></h1>
                     <div class="intro-desc text-left">
                         <div class="line"></div>
                         <p>
-                            You can forward your messages to Atayılmaz Web Solutions from the link below.
-                            At Atayilmaz Software Solutions, we specialize in creating custom websites for businesses like yours.
-                            Our team of experienced developers and designers work closely with you to create a website that meets your unique needs and
-                            reflects your brand's identity.
+                            {{__('pages.contact.hero.description')}}
                         </p>
                 </div>
             </div>

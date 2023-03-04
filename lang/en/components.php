@@ -47,5 +47,32 @@ return [
     'gallery' =>[
         'title' => "Our Projects",
         'description' => "The projects we have done with care as Atayilmaz web solutions are listed below. We have been providing consultancy services to 8 different e-commerce projects since 2022.",
-    ]
+    ],
+    'video' => [
+        'small-text' => "Corporate Website",
+        'title' => "We make your corporate website.",
+        'description' =>"Looking for a professional corporate website to showcase your business? Look no further! Our expert team can design and develop a website that's tailored to your unique needs and goals. With a focus on user experience, functionality, and aesthetics, we'll create a site that's not only visually stunning but also easy to navigate and optimized for search engines. Contact us today to learn more about our corporate website services.",
+        'first_card' => [
+            'title' => "We provide best services",
+            'description' => "At our company, we pride ourselves on providing the best services possible. From start to finish, we're committed to delivering excellence in everything we do. "
+        ],
+        'second_card' => [
+            'title' => "We are experts in our field",
+            'description' => "Our team of experienced designers and developers have years of experience in the field of web design and development. We know what it takes to create a website that's not only visually appealing but also easy to navigate and optimized for search engines."
+        ],
+        'third_card' => [
+            'title' => "Start bussiness",
+            'description' => "Starting a business can be both exciting and daunting. At our company, we're here to help you every step of the way. "
+        ],
+    ],
+    'form' => [
+        'title' => 'GET İN TOUCH',
+        'description' => "We'd love to hear from you! Please fill out this form and we will get in touch with you shortly.",
+        'name' => 'Name',
+        'email' => 'Email',
+        'phone' => 'Phone',
+        'subject' => 'Subject',
+        'message' => 'Message',
+        'submit' => 'Send Message',
+    ],
 ];

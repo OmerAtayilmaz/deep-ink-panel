@@ -14,7 +14,7 @@ return [
     'footer' => [
         'navigation' => 'Sayfalarımız',
         'about' => 'About',
-        'description' => "We provide web & e-commerce solutions for your business. We are a team of professionals with years of experience in web design, web development, e-commerce, and digital marketing.",
+        'description' => "Işletmeniz için web ve e-ticaret çözümleri sunuyoruz. Web tasarımı, web geliştirme, e-ticaret ve dijital pazarlama konularında yılların tecrübesine sahip bir profesyonel ekibiz.",
         'social' => "Bizimle İletişime Geçin",
         'rights' => 'Tüm Hakları Saklıdır.'
     ]

@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\App;
 class HomeController extends Controller {
 
     public function index(){
+
+
         return view('storefront.pages.home');
     }
     public function services(){

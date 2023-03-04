@@ -44,5 +44,32 @@ Basit bir bilgilendirme web sitesi veya karmaşık bir e-ticaret platformu ihtiy
      'gallery' =>[
          'title' => "Projelerimiz",
          'description' => "Atayılmaz Web Çözümleri olarak özenle yaptığımız projeler aşağıda listelenmiştir. 2022'den beri 8 farklı e-ticaret projesine danışmanlık hizmeti sunuyoruz. İşletmenizin dijital varlığını güçlendirmek için bugün bizimle iletişime geçin.",
-     ]
- ];
+     ],
+     'video' => [
+         'small-text' => "Kurumsal Web Sitesi",
+         'title' => "Kurumsal web sitenizi biz tasarlayalım.",
+         'description' => "İşletmenizi sergilemek için profesyonel bir kurumsal web sitesi mi arıyorsunuz? Aramayı bırakın! Uzman ekibimiz, ihtiyaçlarınız ve hedeflerinize uygun bir web sitesi tasarlayabilir ve geliştirebilir. Kullanıcı deneyimi, işlevsellik ve estetiğe odaklanarak, görsel açıdan çarpıcı ve aynı zamanda arama motorları için optimize edilmiş bir site oluşturacağız. Kurumsal web site hizmetlerimiz hakkında daha fazla bilgi için bugün bizimle iletişime geçin.",
+         'first_card' => [
+             'title' => "En iyi hizmeti sunuyoruz",
+             'description' => "Şirketimizde, mümkün olan en iyi hizmetleri sunmaktan gurur duyuyoruz. Başlangıçtan bitişe kadar, yaptığımız her şeyde mükemmeliyeti sunmaya kendimizi adıyoruz."
+         ],
+         'second_card' => [
+             'title' => "Alanında uzmanız",
+             'description' => "Deneyimli tasarımcı ve geliştiricilerden oluşan ekibimiz, web tasarımı ve geliştirme alanında yılların tecrübesine sahiptir. Arama motorları için optimize edilmiş ve kolay gezilebilen bir web sitesi oluşturmanın ne gerektirdiğini biliyoruz."
+         ],
+         'third_card' => [
+             'title' => "İşe başlama",
+             'description' => "Bir işe başlamak heyecan verici veya endişelendirici olabilir. Şirketimiz, adım adım size yardımcı olmak için burada. "
+         ]
+    ],
+     'form' => [
+         'title' => "Bize Ulaşın",
+         'description' => "İşletmenizin dijital varlığını güçlendirmek için bugün bizimle iletişime geçin.",
+         'name' => 'İsim',
+         'email' => 'E-posta',
+         'phone' => 'Telefon',
+         'subject' => 'Konu',
+         'message' => 'Mesaj',
+         'submit' => 'Mesaj Gönder',
+     ],
+];

@@ -4,20 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
 
-// HOME PAGE REDIRECTION BASED ON BROWSER LANGUAGE
-
+Route::get("set-language/{language}",[\App\Http\Controllers\LanguageController::class,"changeLanguage"])->name("set-language");
 // HOME PAGE ROUTES
- Route::prefix("/en")->controller(HomeController::class)->name('storefront.')->group(function(){
-        Route::get('/', 'index')->name('index');
-        Route::get('/services', 'services')->name('services');
-        Route::get('/projects', 'projects')->name('projects');
-        Route::get('/references', 'references')->name('references');
-        Route::get('/blog', 'blog')->name('blog');
-        Route::get('/about', 'about')->name('about');
-        Route::get('/contact', 'contact')->name('contact');
-        Route::get('/faq', 'faq')->name('faq');
- });
- Route::prefix("/tr")->controller(HomeController::class)->name('storefront.')->group(function(){
+ Route::prefix("/{locale?}")->controller(HomeController::class)->name('storefront.')->group(function(){
         Route::get('/', 'index')->name('index');
         Route::get('/services', 'services')->name('services');
         Route::get('/projects', 'projects')->name('projects');
