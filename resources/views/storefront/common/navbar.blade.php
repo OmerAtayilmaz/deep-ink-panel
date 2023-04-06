@@ -41,11 +41,11 @@
                         <span class="icon-phone me-2"></span> <span>+ 90 551 184 15 17</span>
                 </a></li>
                 @if(app()->getLocale() == 'tr')
-                <li><a href="{{route('set-language',['language'=>'en'])}}" class="d-flex align-items-center text-white h2 fw-bold">
+                <li><a href="#" class="d-flex align-items-center text-white h2 fw-bold">
                         <i class="fa-sharp fa-solid fa-globe me-2"></i> <span> EN </span>
                 </a></li>
                 @else
-                    <li><a href="{{route('set-language',['language'=>'tr'])}}" class="d-flex align-items-center text-white h2 fw-bold">
+                    <li><a href="#" class="d-flex align-items-center text-white h2 fw-bold">
                             <i class="fa-sharp fa-solid fa-globe me-2"></i> <span> TR </span>
                         </a></li>
                 @endif
