@@ -14,9 +14,9 @@ class SettingsController extends Controller
     /**
      * Display the user's profile form.
      */
-    public function edit(Request $request): View
+    public function index(Request $request): View
     {
-        return view('backoffice.settings.edit', [
+        return view('backoffice.settings.index', [
             'user' => $request->user(),
         ]);
     }
