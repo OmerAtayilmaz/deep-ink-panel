@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,10 +27,24 @@ use Illuminate\Support\Facades\Route;
         Route::get('/faq', 'faq')->name('faq');
  });
 
-Route::middleware('auth')->prefix("/settings")->group(function () {
-    Route::get('/', [ProfileController::class, 'edit'])->name('backoffice.settings.edit');
-    Route::patch('/', [ProfileController::class, 'update'])->name('backoffice.settings.update');
-    Route::delete('/', [ProfileController::class, 'destroy'])->name('backoffice.settings.destroy');
-});
+ Route::prefix("/backoffice")->name("backoffice.")->group(function(){
+
+     # Siteyi Bakım Moduna Almak - Sitenin Adress Bilgileri
+     Route::middleware('auth')->prefix("/settings")->group(function () {
+         Route::get('/', [SettingsController::class, 'edit'])->name('settings.edit');
+         Route::patch('/', [SettingsController::class, 'update'])->name('settings.update');
+         Route::delete('/', [SettingsController::class, 'destroy'])->name('settings.destroy');
+     });
+
+     #News Management - Blog Yazısı Ekle, Sil, Güncelle
+
+
+     #Projects Management  - Projelerimizi Ekle, Sil, Güncelle
+
+     #Message Management -
+
+
+ });
+
 
 require __DIR__.'/auth.php';
