@@ -1,9 +1,9 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-        <img src="{{asset("backasset")}}/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">AWS</span>
+    <a href="/backoffice" class="brand-link">
+        <i class="fa fa-pen-fancy bg-danger text-white px-2 py-1"></i>
+        <span class="brand-text font-weight-light">Deep Ink Oy</span>
     </a>
 
     <!-- Sidebar -->
@@ -48,30 +48,38 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route("backoffice.messages.index")}}" class="nav-link">
-                        <i class="nav-icon far fa-envelope"></i>
+                    <a href="{{route("backoffice.appointment.today")}}" class="nav-link">
+                        <i class="nav-icon  fa fa-calendar"></i>
                         <p>
-                            Contact Messages
-                            <span class="right badge badge-danger">3</span>
+                            Today's Appointments
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route("backoffice.dashboard")}}" class="nav-link">
-                        <i class="nav-icon far fa-image"></i>
+                    <a href="{{route("backoffice.appointment.index")}}" class="nav-link">
+                        <i class="nav-icon  fa fa-calendar"></i>
                         <p>
-                            Projects
+                            All Appointments
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route("backoffice.dashboard")}}" class="nav-link">
-                        <i class="nav-icon fas fa-edit"></i>
+                    <a href="{{route("backoffice.order.index")}}" class="nav-link">
+                        <i class="nav-icon fa fa-shopping-cart"></i>
                         <p>
-                            Settings
+                            Orders
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{route("backoffice.order.completed")}}" class="nav-link">
+                        <i class="nav-icon  fa fa-shopping-cart"></i>
+                        <p>
+                            Completed Orders
+                        </p>
+                    </a>
+                </li>
+
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

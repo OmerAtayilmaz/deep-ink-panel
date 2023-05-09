@@ -1,0 +1,6 @@
+[] -> Tasarım
+[] -> Şifre
+[] -> Paketle
+[COMPLETED] -> Search & Pagination
+[COMPLETED] -> Logout
+[COMPLETED] -> Randevu Sistemi

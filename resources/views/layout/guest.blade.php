@@ -14,15 +14,23 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-gray-800 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-900">
+    <body class="font-sans text-gray-800 antialiased"
+          style="
+            background-image: url('{{asset('backasset')}}/bg.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            "
+>
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0" style="background: rgba(0,0,0,0.8);">
             <div>
                 <a href="/">
-                    <h1 class="font-black text-white">Atayilmaz Web Solutions</h1>
+                    <h1 class="font-black text-white">Order Management Panel</h1>
                 </a>
             </div>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg"
+
+            >
                 {{ $slot }}
             </div>
         </div>
