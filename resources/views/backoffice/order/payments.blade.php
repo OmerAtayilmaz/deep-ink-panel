@@ -36,7 +36,7 @@
             <h6 class="font-weight-bold">Total Price:{{$order->total_price}}€ | Total Paid:{{$totalPayment}}€</h6>
             <strong>{{$order->total_price - $totalPayment}}€  euros left until the debt expires</strong>
             @else
-                <h6 class="font-weight-bold">Payment Completed.</h6>
+                <h6 class="font-weight-bold">Payment Completed</h6>
             @endif
                 </div>
             </div>
