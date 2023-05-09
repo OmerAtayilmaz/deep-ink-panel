@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
 use Illuminate\Support\Facades\DB;
 use Illuminate\View\View;
 
@@ -12,9 +13,9 @@ class AdminController extends Controller
      */
     public function index(): View
     {
-        $userCount = DB::select("SELECT COUNT(*) AS user_count from users")[0]?->user_count;
-        $activeOrdersCounter = DB::select("SELECT COUNT(*) AS order_count from orders where status = 'ACTIVE'")[0]?->order_count;
-        $completedOrdersCounter = DB::select("SELECT COUNT(*) AS order_count from orders where status = 'COMPLETED' ")[0]?->order_count;
+        $userCount = User::count();
+        $activeOrdersCounter = Order::where('status', 'ACTIVE')->count();
+        $completedOrdersCounter = Order::where('status', 'COMPLETED')->count();
 
         return view("backoffice.index",[
             'user' => $userCount,
