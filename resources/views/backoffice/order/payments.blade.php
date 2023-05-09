@@ -30,15 +30,14 @@
             </div>
         </div>
         <div class="col-12">
+            <div class="card">
+                <div class="card-body">
             @if($order->total_price > $totalPayment)
             <h6 class="font-weight-bold">Total Price:{{$order->total_price}}€ | Total Paid:{{$totalPayment}}€</h6>
             <strong>{{$order->total_price - $totalPayment}}€  euros left until the debt expires</strong>
             @else
                 <h6 class="font-weight-bold">Payment Completed</h6>
             @endif
-            <div class="progress mb-3 bg-danger">
-                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{$progressPercent}}%">
-                    <span class="sr-only">20% Complete</span>
                 </div>
             </div>
         </div>
