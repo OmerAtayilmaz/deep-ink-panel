@@ -5,6 +5,7 @@
             <a href="{{route('backoffice.appointment.create')}}" type="button" class="btn btn-block bg-gradient-primary btn-sm">Create Appointment</a>
         </div>
     </div>
+
     @livewire('appoinment',['appointments' => $appointments ])
 
 @endsection

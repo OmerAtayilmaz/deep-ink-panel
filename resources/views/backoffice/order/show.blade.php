@@ -1,13 +1,15 @@
 @extends("layout.backoffice")
 @section('content')
+
     <div class="row">
         <div class="col-md-1 m-3">
+            <button class="btn btn-block bg-gradient-warning btn-sm" onclick="printPage()">Print</button>
             <a href="{{route('backoffice.order.index')}}" type="button" class="btn btn-block bg-gradient-primary btn-sm">Back to Orders</a>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <table class="table table-striped">
+    <div class="row  custom-order-page" >
+        <div class="col-12 ">
+            <table class="table table-striped bg-white ">
                 <tbody>
                 <tr>
                     <th>ID</th>
@@ -48,4 +50,19 @@
 
         </div>
     </div>
+    <div id="printLogo" class="custom-page-logo d-none  align-items-center justify-content-center">
+        <h1 class="text-center text-dark" style="font-size:120px; font-family: 'Russo One', sans-serif;">DEEP INK TATTOO STUDIO</h1>
+    </div>
+    <script>
+        const printLogo = document.getElementById("printLogo");
+        const printPage = () => {
+            printLogo.classList.remove("d-none");
+            printLogo.classList.add("d-flex");
+            window.print();
+        }
+        window.addEventListener("afterprint", () => {
+            printLogo.classList.remove("d-flex");
+            printLogo.classList.add("d-none");
+        });
+    </script>
 @endsection

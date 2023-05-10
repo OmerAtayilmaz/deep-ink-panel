@@ -1,4 +1,14 @@
 <div>
+    <div class="row d-flex align-items-center justify-content-between w-100 ">
+        <div class="col-md-4 m-3 bg-white p-3 rounded">
+            <label for="start_date">Start Date: </label>
+            <input id="start_date" wire:model="start_date" class="form-control"  type="datetime-local"/>
+        </div>
+        <div class="col-md-4 m-3 bg-white  p-3 rounded">
+            <label for="start_date">End Date:</label>
+            <input id="start_date" wire:model="end_date" class="form-control"  type="datetime-local"/>
+        </div>
+    </div>
     <div class="input-group input-group-sm mb-3" style="width: 100%;">
         <input wire:model="search" type="text" name="table_search" class="form-control float-right" placeholder="Search">
         <div class="input-group-append">
@@ -36,6 +46,7 @@
                             <th>Total Price</th>
                             <th>Gallery</th>
                             <th>Payments</th>
+                            <th>Created At</th>
                             <th>Status</th>
                             <th>Actions</th>
                         </tr>
@@ -54,6 +65,7 @@
                                 <td>
                                     <a class="border px-3 pt-3 pb-1 border-primary" href="{{route("backoffice.order.payments",['id' => $order->id])}}"><i class=" nav-icon fa fa-euro-sign fa-2x"></i></a>
                                 </td>
+                                <td>{{$order->created_at}}</td>
                                 <td>{{$order->status}}</td>
                                 <td>
                                     <div class="btn-group">

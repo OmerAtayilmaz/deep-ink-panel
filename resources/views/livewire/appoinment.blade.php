@@ -1,4 +1,14 @@
 <div>
+    <div class="row d-flex align-items-center justify-content-between w-100 ">
+        <div class="col-md-4 m-3 bg-white p-3 rounded">
+            <label for="start_date">Start Date: </label>
+            <input id="start_date" wire:model="start_date" class="form-control"  type="datetime-local"/>
+        </div>
+        <div class="col-md-4 m-3 bg-white  p-3 rounded">
+            <label for="start_date">End Date:</label>
+            <input id="start_date" wire:model="end_date" class="form-control"  type="datetime-local"/>
+        </div>
+    </div>
         <div class="input-group input-group-sm mb-3" style="width: 100%;">
             <input wire:model="search" type="text" name="table_search" class="form-control float-right" placeholder="Search">
             <div class="input-group-append">
